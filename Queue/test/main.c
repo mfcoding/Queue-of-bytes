@@ -34,7 +34,7 @@ int main()
              /* // Also try function enqueue_more() to enqueue many items via keyboard as follows
                 getchar();
                 qu = enqueue_more();
-                // and don't forget to comment these lines above from 32 to 34 */
+                // and don't forget to comment these lines above from 31 to 33 */
                 break;
             case 2:
                 if(!empty(&qu.queue))
