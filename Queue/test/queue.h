@@ -42,5 +42,4 @@ extern void que_clear(queue *q);
 /* Erase the entire queue from memory and set the queue's buffer to NULL. */
 extern void que_destroy(queue *q);
 
-
 #endif
