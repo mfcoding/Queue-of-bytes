@@ -31,7 +31,7 @@ int main()
                 char item;
                 scanf(" %c", &item);
                 enqueue(&qu, item);
-             /* // Also try function enqueue_more() to enqueue many items via keyboard as follows
+             /* // Also try function enqueue_more() to enqueue multiple items via keyboard as follows
                 getchar();
                 qu = enqueue_more();
                 // and don't forget to comment these lines above from 31 to 33 */
