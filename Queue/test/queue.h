@@ -18,7 +18,7 @@ extern queue init_queue(uint64_t i, ...);
 /* Add an item DATA to queue tail via standard input. */
 extern void enqueue(queue *q, char data);
 
-/* Add many items to queue tail via standard input. */
+/* Add multiple items to queue tail via standard input. */
 extern queue enqueue_more(void);
 
 /* Remove an item from queue head. */
