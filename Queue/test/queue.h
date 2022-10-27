@@ -2,8 +2,6 @@
 #define QUEUE_H
 #include <cstring.h>
 
-// typedef string queue;
-
 struct queue
 {
     string queue;
