@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
-#include <cstring.h>
 #include "queue.h"
 
 queue init_queue(uint64_t i, ...)
