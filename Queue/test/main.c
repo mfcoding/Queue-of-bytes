@@ -17,7 +17,7 @@ int main()
         " 2  to remove an item from the queue.\n"
         " 3  to print number of the elements in the queue.\n"
         " 4  to show content of the queue.\n"
-        " 5  to shrink the capacity of the queue to fit its content.\n"
+        " 5  to shrink capacity of the queue to fit its content.\n"
         " 6  to remove the entire queue from memory.\n"
         " 0  to exit the program.\033[0m\n");  
 
