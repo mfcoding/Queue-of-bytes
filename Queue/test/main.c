@@ -12,7 +12,7 @@ int main()
     while (operation > 0 && operation < 7)
     {
         printf("%s", "\n\033[0;33m");
-        puts("Select one of these operations below\n"
+        puts("Select one of these operations below:-\n"
         " 1  to add an item to the queue.\n"
         " 2  to remove an item from the queue.\n"
         " 3  to print number of the elements in the queue.\n"
