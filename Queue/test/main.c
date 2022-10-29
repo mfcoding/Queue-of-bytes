@@ -31,10 +31,12 @@ int main()
                 char item;
                 scanf(" %c", &item);
                 enqueue(&qu, item);
-             /* // Also try function enqueue_more() to enqueue multiple items via keyboard as follows
+                /* 
+                // Also try function enqueue_more() to enqueue multiple items via keyboard as follows
                 getchar();
                 qu = enqueue_more();
-                // and don't forget to comment these lines above from 31 to 33 */
+                // and don't forget to comment these lines above from 31 to 33 
+                */
                 break;
             case 2:
                 if(!empty(&qu.queue))
@@ -69,10 +71,12 @@ int main()
             case 6:
                 que_destroy(&qu);
                 puts("Queue removed successfully.");
-             /* // Also try function que_clear() as follows
+                /* 
+                // Also try function que_clear() as follows
                 que_clear(&qu);
                 puts("Queue cleared successfully."); 
-                // and don't forget to comment these lines 70 and 71 */
+                // and don't forget to comment these lines 70 and 71 
+                */
                 break;
             case 0:
                 return 0;
