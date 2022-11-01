@@ -51,7 +51,7 @@ typedef struct queue queue;
     }  
 
 /*
-    Deque functions declrartions.
+    Queue functions declrartions.
 */
 
 /* Initialize a queue using individual items or 'characters'. */
