@@ -12,6 +12,48 @@ typedef struct queue queue;
 
 #define queue(...)  |0x1 ? init_queue(__VA_ARGS__) : *((queue *)0x0)
 
+/* 
+    Lightweight versions of the declared functions. 
+*/
+
+#define _enqueue_(q, data)                                         \
+    _push_back_(q.queue, data)                
+                
+#define _dequeue_(q)                                               \
+    if (_len_(q.queue))                                            \
+    {                                                              \
+        _begin_(q.queue)++;                                        \
+        _len_(q.queue)--;                                          \
+        q.c++;                                                     \
+    }                                                              \
+    else                                                           \
+    {                                                              \
+        _begin_(q.queue) -= q.c;                                   \
+        q.c = 0;                                                   \
+        clear(&q.queue);                                           \
+    }                                              
+
+#define _enqueue__(q, data)                                        \
+    _push_back_(q.queue, data)                
+
+#define _dequeue__(q)                                              \
+    if (_len_(q->queue))                                           \
+    {                                                              \
+        _begin_(q->queue)++;                                       \
+        _len_(q->queue)--;                                         \
+        q->c++;                                                    \
+    }                                                              \
+    else                                                           \
+    {                                                              \
+        _begin_(q->queue) -= q->c;                                 \
+        q->c = 0;                                                  \
+        clear(&q->queue);                                          \
+    }  
+
+/*
+    Deque functions declrartions.
+*/
+
 /* Initialize a queue using individual items or 'characters'. */
 extern queue init_queue(uint64_t i, ...);
 
