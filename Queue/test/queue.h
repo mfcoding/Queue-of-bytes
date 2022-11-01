@@ -13,7 +13,7 @@ typedef struct queue queue;
 #define queue(...)  |0x1 ? init_queue(__VA_ARGS__) : *((queue *)0x0)
 
 /* 
-    Lightweight versions of the declared functions. 
+    Lightweight versions of some of the declared functions (basic operations). 
 */
 
 #define _enqueue_(q, data)                                         \
